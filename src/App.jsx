@@ -27,8 +27,8 @@ function App() {
       </div>
       <div>
         {/* Pass the taskList to the Eachtask component */}
-        {taskList.map((item) => {
-          return <Eachtask taskList={taskList} />
+        {taskList.map((item, index) => {
+          return <Eachtask taskList={taskList} key={index} />
         })}
       </div>
     </div>
